@@ -26,9 +26,6 @@ public class PlayerController : MonoBehaviour {
 			anim.SetBool("Ground", false);
 			r2d.AddForce(new Vector2(0, jumpForce));
 		}
-		if( Input.GetMouseButtonDown(0) ){
-			anim.SetBool("Throw", true);
-		}
 	}
 
 	void FixedUpdate () {
