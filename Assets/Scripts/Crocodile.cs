@@ -49,7 +49,7 @@ public class Crocodile : Enemy, IShooter {
 		ReloadTime = 5.0f;
 		damageHit = 30;
 		detectRange = 6.0f;
-		player = GameObject.FindObjectOfType<Player>();
+		player = GameObject.FindObjectOfType<Player>(); //GameObject.FindWithTag("???");
 	}
 
 }

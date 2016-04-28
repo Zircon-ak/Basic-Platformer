@@ -9,6 +9,7 @@ public class Ant : Enemy {
 	public override void Behaviour ()
 	{
 		r2d.MovePosition( r2d.position + velocity * Time.fixedDeltaTime );
+
 		if( r2d.position.x <= movePoints[0].position.x && velocity.x < 0){
 			Flip();
 		}
